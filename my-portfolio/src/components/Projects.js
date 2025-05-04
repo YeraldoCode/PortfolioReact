@@ -1,6 +1,9 @@
 import React from 'react';
 import lipumetricas from '../assets/images/lipumetricasmty.png';
 import pandaboutique from '../assets/images/pandaboutique.png';
+import infobag from '../assets/images/infobag.png';
+import econome from '../assets/images/econome.png';
+
 
 const Projects = () => {
   const projects = [
@@ -16,6 +19,18 @@ const Projects = () => {
       link: 'https://lipumtymetricas.com/',
       image: lipumetricas,
     },
+    {
+      name: 'Infobag',
+      description: 'Aplicación de escritorio donde al poner el codigo de empresa que cotiza en bolsa, te muestra su información financiera. Desarrollada con Python y Tkinter.',
+      link: 'https://github.com/YeraldoCode/InfoBag',
+      image: infobag,
+    },
+    {
+      name: 'Econome',
+      description: 'Aplicación web para la gestión de gastos y presupuestos personales, desarrollada con Flask, HTML, bootstrapCSS y JavaScript.',
+      link: 'https://github.com/YeraldoCode/EconoMe-app',
+      image: econome,
+    }
   ];
 
   return (

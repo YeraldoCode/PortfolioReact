@@ -27,34 +27,42 @@ body, html {
 }
 
 /* Footer */
-footer, .footer {
-  margin-top: auto;
+.footer {
   background-color: #000000;
-  color: #ffffff;
+  color: #cccccc;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1rem 0;
+  border-top: 2px solid #cc0033;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .footer-text {
   margin: 0;
-  font-size: 14px;
+  font-size: 1rem;
+  color: #cccccc;
 }
 
-.footer-link {
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-icon {
   color: #cc0033;
-  text-decoration: none;
-  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-.footer-link:hover {
-  text-decoration: underline;
+.footer-icon:hover {
+  color: #ffffff;
 }
+
 
 /* Header */
 header {
@@ -98,49 +106,64 @@ section {
   background-color: #a60029;
 }
 .about-section {
-  background-color: #000000;  /* Ruta relativa al folder public */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 4rem 2rem;
-  text-align: center;
+  background: url('assets/images/fondo.jpg') no-repeat center center/cover;
+  padding: 80px 20px;
+  color: #fff;
   position: relative;
-  z-index: 1;
-}
-
-.about-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Oscurece para mejor contraste */
-  z-index: -1;
 }
 
 .about-container {
   max-width: 900px;
-  margin: 0 auto;
-  color: #ffffff;
-  position: relative;
-  z-index: 2;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
 }
 
 .about-title {
-  font-size: 2.5rem;
-  color: #cc0033;
-  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
-  text-transform: uppercase;
+  color: #a60029;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 60px;
+  background-color: #ffffff;
+  border-radius: 2px;
 }
 
 .about-text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #f0f0f0;
 }
+
 .bg-black {
   background-color: #000 !important;
+}
+
+/* Skills */
+#skills {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #a60029;
 }
