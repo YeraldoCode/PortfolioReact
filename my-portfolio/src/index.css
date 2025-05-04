@@ -1,0 +1,146 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tarjetas */
+.card {
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer, .footer {
+  margin-top: auto;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-link {
+  color: #cc0033;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav a {
+  color: #cccccc;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #cc0033;
+}
+
+/* Secciones */
+section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+/* Botón principal */
+.btn-primary {
+  background-color: #cc0033;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a60029;
+}
+.about-section {
+  background-color: #000000;  /* Ruta relativa al folder public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurece para mejor contraste */
+  z-index: -1;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #cc0033;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+.bg-black {
+  background-color: #000 !important;
+}
