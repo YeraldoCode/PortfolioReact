@@ -78,8 +78,9 @@ const Header = () => {
                     <ul className="navbar-nav ms-auto text-center">
                         {[
                             { id: 'about', text: 'Sobre mí' },
-                            { id: 'skills', text: 'Habilidades' },
                             { id: 'projects', text: 'Proyectos' },
+                            { id: 'skills', text: 'Habilidades' },
+                            { id: 'contact', text: 'Contacto' }
                         ].map((item) => (
                             <motion.li 
                                 className="nav-item mx-1" 
@@ -97,7 +98,9 @@ const Header = () => {
                                         transition: 'all 0.3s ease',
                                         fontWeight: activeSection === item.id ? '600' : '400',
                                     }}
+                                    
                                 >
+                                    
                                     {activeSection === item.id && (
                                         <motion.span
                                             className="position-absolute"
