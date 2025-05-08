@@ -125,7 +125,7 @@ const About = () => {
             <motion.h4 
               className="mb-4" 
               variants={itemVariants}
-              style={{ color: '#ff0000' }} // Cambiado a rojo vivo
+              style={{ color: '#ff3366' }} 
             >
               {personalInfo.role}
             </motion.h4>
