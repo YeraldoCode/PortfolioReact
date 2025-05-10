@@ -15,7 +15,7 @@ const Projects = () => {
       id: 1,
       name: 'Panda Boutique Ecommerce',
       description: 'Ecommerce de ropa, gorras y accesorios, desarrollado con Shopify, diseño personalizado e integración de pasarelas de pago.',
-      link: 'https://pandaboutique.com/',
+      link: 'https://pandaboutique.shop/',
       image: pandaboutique,
       technologies: ['Shopify', 'Liquid', 'JavaScript', 'CSS'],
       category: 'Web Development'
@@ -51,7 +51,7 @@ const Projects = () => {
       id: 5,
       name: 'Ping Pong Game',
       description: 'Juego de ping pong en 2D desarrollado con Python y Pygame, con gráficos mejorados, lógica de juego, control de jugadores y detección de colisiones.',
-      link: 'https://yeraldocode.github.io/portafolio/',
+      link: 'https://github.com/YeraldoCode/PinpongApp',
       image: pingpong,
       technologies: ['Python', 'Pygame', 'Game Development'],
       category: 'Game Development'

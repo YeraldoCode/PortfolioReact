@@ -78,6 +78,7 @@ const Header = () => {
                     <ul className="navbar-nav ms-auto text-center">
                         {[
                             { id: 'about', text: 'Sobre mí' },
+                            { id: 'services', text: 'Servicios'},
                             { id: 'projects', text: 'Proyectos' },
                             { id: 'skills', text: 'Habilidades' },
                             { id: 'contact', text: 'Contacto' }
