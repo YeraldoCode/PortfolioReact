@@ -5,6 +5,7 @@ import pandaboutique from '../assets/images/pandaboutique.png';
 import infobag from '../assets/images/infobag.png';
 import econome from '../assets/images/econome.png';
 import pingpong from '../assets/images/PingPongapp.png';
+import compensaciones from '../assets/images/compensaciones.png';
 import { FaGithub, FaExternalLinkAlt, FaCode, FaLayerGroup } from 'react-icons/fa';
 
 const Projects = () => {
@@ -56,6 +57,15 @@ const Projects = () => {
       technologies: ['Python', 'Pygame', 'Game Development'],
       category: 'Game Development'
     },
+    {
+      id: 6,
+      name: 'Compensaciones de LIPU',
+      description: 'Aplicación web para gestionar compensaciones de empleados, desarrollada con Flask, extrayendo datos de un excel que se actualiza semanalmente.',
+      link: 'https://github.com/YeraldoCode/compensaciones_web',
+      image: compensaciones, // Placeholder image
+      technologies: ['Flask', 'Bootstrap', 'JavaScript', 'Excel'],
+      category: 'Data Visualization'
+    }
   ];
 
   // Animation variants

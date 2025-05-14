@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const contactRoutes = require('./routes/contact');
 const { initializeApp } = require('firebase/app');
 const { getFirestore } = require('firebase/firestore');
-const { path } = require('framer-motion/client');
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -25,8 +24,14 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp);
 
-// Middleware
-app.use(cors());
+// Configurar CORS para permitir solicitudes desde el dominio del frontend
+const corsOptions = {
+    origin: 'https://my-portfolio-b4662.web.app', // Dominio del frontend
+    optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
+
+// Middleware para analizar solicitudes JSON
 app.use(bodyParser.json());
 
 // Rutas
