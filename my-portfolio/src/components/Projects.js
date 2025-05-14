@@ -5,7 +5,7 @@ import pandaboutique from '../assets/images/pandaboutique.png';
 import infobag from '../assets/images/infobag.png';
 import econome from '../assets/images/econome.png';
 import pingpong from '../assets/images/PingPongapp.png';
-import compensaciones from '../assets/images/compensaciones.png';
+import compensaciones from '../assets/images/compensaciones_web.png';
 import { FaGithub, FaExternalLinkAlt, FaCode, FaLayerGroup } from 'react-icons/fa';
 
 const Projects = () => {
